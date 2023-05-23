@@ -316,6 +316,12 @@
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- Flag indicating whether the surfaceflinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
     <!-- Number of physical SIM slots on the device. This includes both eSIM and pSIM slots, and
          is not necessarily the same as the number of phones/logical modems supported by the device.
          For example, a multi-sim device can have 2 phones/logical modems, but 3 physical slots,
@@ -325,5 +331,6 @@
 
     <!-- the number of the max cached processes in the system. -->
     <integer name="config_customizedMaxCachedProcesses">96</integer>
+
 
 </resources>
