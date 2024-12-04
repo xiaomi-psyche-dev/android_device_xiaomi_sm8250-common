@@ -19,6 +19,9 @@ persist.vendor.color.matrix=2
 # DPM
 persist.vendor.dpm.feature=1
 
+# Display (Surface Flinger)
+ro.surface_flinger.enable_layer_caching=false
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
