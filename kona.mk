@@ -144,8 +144,7 @@ $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 PRODUCT_PACKAGES += \
     android.hidl.memory@1.0.vendor \
     android.hidl.memory.block@1.0.vendor \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
+    android.hardware.camera.provider-service.lineage
 
 PRODUCT_PACKAGES += \
     libutils.vendor \
