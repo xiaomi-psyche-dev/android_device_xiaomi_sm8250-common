@@ -1,0 +1,3 @@
+# Allow devicesettings_app to access battery sysfs for charge bypass
+allow devicesettings_app vendor_sysfs_battery_supply:dir search;
+allow devicesettings_app vendor_sysfs_battery_supply:file rw_file_perms;
