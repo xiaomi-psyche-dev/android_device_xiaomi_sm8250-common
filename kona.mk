@@ -68,8 +68,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
-$(call soong_config_set_bool,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -273,9 +271,6 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sysfs
-
-$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
-$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 
 # Media configs
 PRODUCT_PACKAGES += \
