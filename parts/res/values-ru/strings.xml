@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 The LineageOS Project
+     Copyright (C) 2026 mediatek papa
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Popup camera settings -->
+    <string name="popup_led_title">Светодиод камеры</string>
+    <string name="popup_led_summary">Подсвечивать камеру при открытии и закрытии</string>
+    <string name="popup_title">Звуковые эффекты передней камеры</string>
+    <string name="popup_title_muqin">Ксилофон</string>
+    <string name="popup_title_yingyan">Кондор</string>
+    <string name="popup_title_mofa">Магия</string>
+    <string name="popup_title_jijia">Меха</string>
+    <string name="popup_title_chilun">Шестерня</string>
+    <string name="popup_title_cangmen">Дверь хижины</string>
+
+    <!-- Popup camera strings -->
+    <string name="popup_camera_tip">Внимание</string>
+    <string name="popup_camera_takeback_failed_times_calibrate">Невозможно закрыть переднюю камеру. Попробуйте провести калибровку.</string>
+    <string name="popup_camera_popup_failed_times_calibrate">Невозможно открыть переднюю камеру. Попробуйте провести калибровку.</string>
+    <string name="popup_camera_calibrate_running">Невозможно использовать камеру во время калибровки.</string>
+    <string name="popup_camera_calibrate_now">Калибровка</string>
+    <string name="popup_camera_calibrate_failed">Калибровка невозможна</string>
+    <string name="popup_camera_calibrate_success">Успешная калибровка. Теперь вы можете использовать переднюю камеру.</string>
+    <string name="stop_operate_camera_frequently">Вы слишком часто открываете переднюю камеру.</string>
+    <string name="takeback_camera_front_failed">Невозможно закрыть переднюю камеру. Попробуйте ещё раз.</string>
+    <string name="popup_camera_front_failed">Невозможно открыть переднюю камеру. Попробуйте ещё раз.</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Температурные профили</string>
+    <string name="thermal_summary">Выбор профиля для отдельных приложений</string>
+    <string name="thermal_default">По умолчанию</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Звонок</string>
+    <string name="thermal_gaming">Игра</string>
+    <string name="thermal_streaming">Трансляция</string>
+</resources>
