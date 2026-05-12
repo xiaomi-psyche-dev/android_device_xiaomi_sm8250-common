@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.kona \
     audio.r_submix.default \
-    audio.usbv2.default
+    audio.usbv2.default \
+    sound_trigger.primary.kona
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
