@@ -49,4 +49,11 @@
     <string name="thermal_dialer">Звонок</string>
     <string name="thermal_gaming">Игра</string>
     <string name="thermal_streaming">Трансляция</string>
+
+    <!-- Charge bypass strings -->
+    <string name="charge_bypass_title">Обходная зарядка</string>
+    <string name="charge_bypass_summary">Заряжать батарею напрямую</string>
+    <string name="charge_bypass_warning">Внимание: Обходная зарядка может повысить температуру устройства и снизить ёмкость батареи. Используйте на свой страх и риск.</string>
+    <string name="charge_bypass_unavailable">Обходная зарядка не поддерживается</string>
+
 </resources>
