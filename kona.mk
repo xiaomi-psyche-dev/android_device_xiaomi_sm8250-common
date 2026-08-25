@@ -266,9 +266,7 @@ $(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
-    media_codecs_kona.xml \
     media_codecs_performance_c2.xml \
-    media_codecs_performance_kona.xml \
     video_system_specs.json
 
 # NFC
@@ -288,10 +286,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
 
 # OMX
-PRODUCT_PACKAGES += \
-    libOmxCore \
-    libOmxVdec \
-    libstagefrighthw
+TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Overlays
 PRODUCT_PACKAGES += \
