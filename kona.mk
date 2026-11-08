@@ -151,7 +151,7 @@ PRODUCT_PACKAGES += \
 # Consumer IR
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.lineage
+    android.hardware.ir-service.xiaomi
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
@@ -250,18 +250,18 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.light-service.xiaomi
 
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.sysfs
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay-service.sysfs
 
-$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
-$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
+#$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
+#$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 
 # Media configs
 PRODUCT_PACKAGES += \
@@ -290,11 +290,9 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPASettingsOverlayCommon \
     CarrierConfigOverlayCommon \
     FrameworkResOverlayCommon \
-    LineageDialerOverlayCommon \
-    LineageSDKOverlayCommon \
-    LineageSettingsOverlayCommon \
     SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
     SystemUIOverlayCommon \
@@ -312,10 +310,8 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
-    libqti-perfd-client \
-    libperfmgr
+#PRODUCT_PACKAGES += \
+#    libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -369,10 +365,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
-    hardware/google/pixel/power-libperfmgr \
-    hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
@@ -396,8 +388,8 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.xiaomi
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch-service.xiaomi
 
 # USB
 PRODUCT_PACKAGES += \
